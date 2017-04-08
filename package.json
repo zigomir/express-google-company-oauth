@@ -1,0 +1,31 @@
+{
+  "name": "express-google-company-oauth",
+  "version": "1.0.0",
+  "description": "Check if user is in your domain.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test"
+  },
+  "keywords": [
+    "express",
+    "google",
+    "oauth",
+    "auth",
+    "company"
+  ],
+  "author": "zigomir@gmail.com",
+  "license": "MIT",
+  "repository" : { 
+    "type" : "git",
+    "url" : "https://github.com/zigomir/express-google-company-oauth.git"
+  },
+  "dependencies": {
+    "passport": "^0.3.2",
+    "passport-google-oauth": "^1.0.0"
+  },
+  "devDependencies": {
+    "cookie-parser": "^1.4.3",
+    "express": "^4.15.2",
+    "express-session": "^1.15.2"
+  }
+}
