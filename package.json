@@ -4,7 +4,8 @@
   "description": "Check if user is in your domain.",
   "main": "index.js",
   "scripts": {
-    "test": "node test"
+    "test": "node test",
+    "lint": "standard"
   },
   "keywords": [
     "express",
@@ -15,9 +16,9 @@
   ],
   "author": "zigomir@gmail.com",
   "license": "MIT",
-  "repository" : { 
-    "type" : "git",
-    "url" : "https://github.com/zigomir/express-google-company-oauth.git"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zigomir/express-google-company-oauth.git"
   },
   "dependencies": {
     "passport": "^0.3.2",
@@ -25,7 +26,9 @@
   },
   "devDependencies": {
     "cookie-parser": "^1.4.3",
+    "dotenv": "^4.0.0",
     "express": "^4.15.2",
-    "express-session": "^1.15.2"
+    "express-session": "^1.15.2",
+    "standard": "^10.0.1"
   }
 }
