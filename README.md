@@ -23,12 +23,10 @@ var config = {
   CALLBACK_PATH: '/auth/google/callback',
   SUCCESS_CALLBACK_PATH: '/',
   FAILURE_CALLBACK_PATH: '/401',
-  SCOPE: 'https://www.googleapis.com/auth/plus.profile.emails.read'
+  SCOPE: 'email' // optional
 }
 
 companyAuth(app, config)
 ```
 
-but there are more dependencies - see [test.js](test.js).
-
-- `express-session`, `cookie-parser`
+There is another dependency (`express-session`) – for working example see [test.js](test.js).

@@ -25,9 +25,8 @@
     "passport-google-oauth": "^1.0.0"
   },
   "devDependencies": {
-    "cookie-parser": "^1.4.3",
     "dotenv": "^4.0.0",
-    "express": "^4.15.5",
+    "express": "^4.16.0",
     "express-session": "^1.15.6",
     "standard": "^10.0.3"
   }

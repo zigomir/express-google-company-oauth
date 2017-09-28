@@ -1,5 +1,4 @@
 var express = require('express')
-var cookieParser = require('cookie-parser')
 var session = require('express-session')
 var dotenv = require('dotenv')
 var companyAuth = require('./index')
@@ -21,7 +20,7 @@ var config = {
   CALLBACK_PATH: '/auth/google/callback',
   SUCCESS_CALLBACK_PATH: '/',
   FAILURE_CALLBACK_PATH: '/401',
-  SCOPE: 'https://www.googleapis.com/auth/plus.profile.emails.read'
+  SCOPE: 'email' // optional - for mor scopes see: https://developers.google.com/+/web/api/rest/oauth#authorization-scopes
 }
 
 app.use(
@@ -31,7 +30,7 @@ app.use(
     saveUninitialized: true
   })
 )
-app.use(cookieParser())
+
 companyAuth(app, config)
 
 app.get('/', auth, function (req, res) {
