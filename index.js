@@ -33,8 +33,7 @@ module.exports = function init (app, config) {
   app.get(
     config.AUTH_PATH,
     passport.authenticate('google', {
-      scope: config.SCOPE ||
-        'https://www.googleapis.com/auth/plus.profile.emails.read'
+      scope: config.SCOPE || 'email'
     })
   )
 
