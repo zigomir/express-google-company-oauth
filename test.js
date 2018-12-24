@@ -20,7 +20,7 @@ var config = {
   CALLBACK_PATH: '/auth/google/callback',
   SUCCESS_CALLBACK_PATH: '/',
   FAILURE_CALLBACK_PATH: '/401',
-  SCOPE: 'email' // optional - for mor scopes see: https://developers.google.com/+/web/api/rest/oauth#authorization-scopes
+  SCOPE: 'email' // optional - for mor scopes see: https://developers.google.com/identity/protocols/googlescopes
 }
 
 app.use(
